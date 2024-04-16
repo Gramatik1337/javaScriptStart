@@ -1,0 +1,25 @@
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.progress {
+  &__wrapper {
+    display: grid;
+    grid-template: repeat(3, 50px) / repeat(3, 50px);
+    justify-content: center;
+
+    gap: 20px;
+  }
+  &__item {
+    background-color: blue;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      color: red;
+      transform: scale(1.5);
+    }
+  }
+}
